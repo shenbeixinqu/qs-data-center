@@ -61,7 +61,6 @@ const actions = {
                     return reject('验证失败，请重新登录。')
                 }
                 const { role, name, avatar, introduction } = data
-
                 commit('SET_ROLES', role)
                 commit('SET_NAME', name)
                 commit('SET_AVATAR', avatar)

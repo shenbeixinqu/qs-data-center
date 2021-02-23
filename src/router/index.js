@@ -3,6 +3,14 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+const weiboData = () =>
+    import ('@/views/data/publicData/weiboData')
+const importData = () =>
+    import ('@/views/data/publicData/weiboData/importData')
+const importJDData = () =>
+    import ('@/views/data/publicData/jingdongData/importData')
+const jingdongData = () =>
+    import ('@/views/data/publicData/jingdongData')
 import Layout from '@/layout'
 
 // resolve=>(require(["@/views/resetPwd/pages/step3"],resolve))
@@ -116,8 +124,9 @@ export const constantRoutes = [{
             children: [{
                     path: 'weiboData',
                     name: 'weiboData',
-                    component: () =>
-                        import ('@/views/data/publicData/weiboData'),
+
+                    // 路由懒加载
+                    component: weiboData,
                     meta: {
                         title: '微博数据概览',
                         icon: 'weibo'
@@ -126,8 +135,7 @@ export const constantRoutes = [{
                 {
                     path: 'importData',
                     name: 'importData',
-                    component: () =>
-                        import ('@/views/data/publicData/weiboData/importData'),
+                    component: importData,
                     meta: {
                         title: '微博数据上传',
                         icon: 'dataForm'
@@ -137,8 +145,7 @@ export const constantRoutes = [{
                 {
                     path: 'importJDData',
                     name: 'importJDData',
-                    component: () =>
-                        import ('@/views/data/publicData/jingdongData/importData'),
+                    component: importJDData,
                     meta: {
                         title: '京东数据上传',
                         icon: 'dataForm'
@@ -148,8 +155,7 @@ export const constantRoutes = [{
                 {
                     path: 'jingdongData',
                     name: 'jingdongData',
-                    component: () =>
-                        import ('@/views/data/publicData/jingdongData'),
+                    component: jingdongData,
                     meta: {
                         title: '京东数据概览',
                         icon: 'JD'

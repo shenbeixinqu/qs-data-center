@@ -1,4 +1,5 @@
-var echarts = require('echarts');
+import echarts from 'echarts'
+
 export function createMap(dom) {
     var myChart = echarts.init(dom);
 
