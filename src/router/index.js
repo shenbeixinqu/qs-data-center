@@ -382,6 +382,17 @@ export const constantRoutes = [{
                         hidden: true
                     },
                     {
+                        path: 'membershipLevelMap',
+                        name: 'membershipLevelMap',
+                        component: () =>
+                            import ('@/views/analyse/weibo/dataMap/membershipLevelMap'),
+                        meta: {
+                            title: '会员等级图',
+                            icon: 'dataForm'
+                        },
+                        hidden: true
+                    },
+                    {
                         path: 'dataMap',
                         name: 'dataMap',
                         component: () =>

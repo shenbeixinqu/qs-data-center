@@ -103,7 +103,6 @@
           <div @click="toareaMap(row.area)">
               <el-link><span>{{ row.area }}</span></el-link>
           </div>
-          
         </template>
       </el-table-column>
 
@@ -142,7 +141,7 @@
               <p><strong>城市：</strong><span>{{ scope.row.area }}</span></p>
              <p><strong>性别：</strong><span>{{ scope.row.sex }}</span></p>
               <p><strong>话题：</strong> <span>{{ scope.row.topicname }}</span></p>
-            <p><strong>会员：</strong> <span>{{ scope.row.membershiplevel }}</span></p>
+            <p><strong>会员：</strong> <el-link @click="toMembershipLevelMap"> <span>{{ scope.row.membershiplevel }}</span></el-link></p>
             <p> <strong>粉丝数：</strong> <span>{{ scope.row.numberoffans }}</span></p>
             <p> <strong>关注数：</strong> <span>{{ scope.row.numberofweibo }}</span></p>
 
@@ -362,14 +361,21 @@ export default {
     turnMap(){
        this.$router.push('/analyse/weiboAnalyse/dataMap')
     },
-     // TODO://   年龄分表
+     //  年龄分布饼图
     toageMap(val){
       this.$router.push('/analyse/weiboAnalyse/weiboAgeMap')
     },
+
+    //   地域分布图
     toareaMap(val){
       this.$router.push('/analyse/weiboAnalyse/weiboAreaMap')
     },
-
+    
+    // 微博会员饼图
+    toMembershipLevelMap(){
+      this.$router.push('/analyse/weiboAnalyse/membershipLevelMap')
+    },
+    
     // 导入本地数据
     handleImport(){
        this.$router.push('/data/publicData/importData')

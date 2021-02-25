@@ -41,7 +41,7 @@ export default {
           // console.log(res)
           this.bfData = res.data
           // console.log(this.bfData)
-          this.bfData.pop()
+          // this.bfData.pop()
           for(var i= 0; i <this.bfData.length;i++){
             this.chartData.rows.push({
               "年龄段": this.bfData[i].eag_layer + '岁',

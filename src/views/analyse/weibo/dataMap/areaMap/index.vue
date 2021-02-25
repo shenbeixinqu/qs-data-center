@@ -30,11 +30,10 @@ import { getWeiboArea } from '@/api/weibo'
     methods:{
       getData(){
         getWeiboArea().then(res =>{
-          console.log(res)
+          // console.log(res)
           this.bfData = res.data
-
-          console.log(this.bfData)
-          this.bfData.pop()
+          // console.log(this.bfData)
+          // this.bfData.pop()
           for(var i= 0; i < this.bfData.length; i++){
             this.chartData.rows.push({
               "位置": this.bfData[i].area,

@@ -1,7 +1,7 @@
 <template>
-<div class="levelMap" @dblclick="toBigMap">
+<div class="levelMap">
     <el-divider>微博用户会员等级条形图</el-divider>
-    <ve-histogram :data="chartData" :settings="chartSettings" ></ve-histogram>
+    <ve-histogram :data="chartData" :settings="chartSettings" height ="70vh"></ve-histogram>
 </div>
 </template>
 
@@ -41,18 +41,14 @@ import { getWeiboMembershipLevel } from '@/api/weibo'
           }
         }
       )
-      },
-      toBigMap(){
-      // TODO: 跳转
-     this.$router.push('/analyse/weiboAnalyse/membershipLevelMap')
-    }
+      }
     }
   }
 </script>
 
 <style scoped>
-/* .levelMap{
+.levelMap{
   width: 70vw;
   margin: 10vh auto;
-} */
+}
 </style>

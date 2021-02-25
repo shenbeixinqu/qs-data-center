@@ -36,6 +36,15 @@ export function getWeiboArea(params) {
 }
 
 
+
+export function getWeiboMembershipLevel(params) {
+    return request({
+        url: '/weibo/getCountBylevel',
+        method: 'get',
+        params
+    })
+}
+
 export function weiboDataUpload(params) {
     return request({
         url: '/weibo/upload',

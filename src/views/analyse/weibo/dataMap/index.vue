@@ -3,7 +3,7 @@
   <el-row class="Chart">
      <el-col :xs="24" :sm="24" :lg="12">
        <div class="chart-wrapper">
-         <el-divider>下单与访问可用 - 折线图</el-divider>
+         <!-- <el-divider>下单与访问可用 - 折线图</el-divider> -->
          <age-chart></age-chart>
        </div>
        
