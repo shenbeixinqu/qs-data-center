@@ -27,7 +27,13 @@ export function getWeiboAge(params) {
     })
 }
 
-
+export function getWeiboArea(params) {
+    return request({
+        url: '/weibo/getCountByArea',
+        method: 'get',
+        params
+    })
+}
 
 
 export function weiboDataUpload(params) {

@@ -10,7 +10,7 @@
        </el-col>
      <el-col :xs="24" :sm="24" :lg="12">
        <div class="chart-wrapper">
-          <el-divider>XXXXX - 饼图</el-divider>
+          <!-- <el-divider>XXXXX - 饼图</el-divider> -->
           <pie-chart></pie-chart>
        </div>
        </el-col>
@@ -47,6 +47,7 @@
   import sexChart from './components/sex-chart'
   import sleepTimeChart from './components/sleep-time-chart'
   import radarChart from './components/radar-chart'
+
   export default {
       components: {
         'person-geograph-echart' : personGeographEchart,
@@ -59,7 +60,7 @@
       created(){
         this.$notify.info({
           title: '消息',
-          message: '打印图表时，请右键保存到本地再打印！',
+          message: '打印图表时，请右键保存到本地再打印！查看图表请双击！',
           offset: 90
     }); 
       }

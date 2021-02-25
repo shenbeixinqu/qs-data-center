@@ -8,7 +8,6 @@
 
 <script>
 import { getWeiboAge } from '@/api/weibo'
-import axios from "axios";
 export default {
   data() {
     this.chartSettings = {
@@ -39,9 +38,9 @@ export default {
     getData(){
       getWeiboAge().then(
         res =>{
-          console.log(res)
+          // console.log(res)
           this.bfData = res.data
-          console.log(this.bfData)
+          // console.log(this.bfData)
           this.bfData.pop()
           for(var i= 0; i <this.bfData.length;i++){
             this.chartData.rows.push({
