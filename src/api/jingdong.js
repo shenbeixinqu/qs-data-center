@@ -16,3 +16,21 @@ export function deleteData(id) {
         params: { id }
     })
 }
+
+// 品牌销量数
+export function getAnnualsales(params) {
+    return request({
+        url: '/jingdong/getAnnualsales',
+        method: 'get',
+        params
+    })
+}
+
+// 各品牌销量详情
+export function getAnnualsalesDetails(params) {
+    return request({
+        url: '/jingdong/getAnnualsalesDetails',
+        method: 'get',
+        params
+    })
+}

@@ -427,16 +427,16 @@ export const constantRoutes = [{
                             icon: 'JD'
                         }
                     },
-                    // {
-                    //     path: 'JDForm',
-                    //     name: 'JDForm',
-                    //     component: () =>
-                    //         import ('@/views/analyse/onlineMall/JDForm'),
-                    //     meta: {
-                    //         title: '京东数据表格',
-                    //         icon: 'JD'
-                    //     }
-                    // },
+                    {
+                        path: 'JDSaleForm',
+                        name: 'JDSaleForm',
+                        component: () =>
+                            import ('@/views/analyse/onlineMall/JDSaleForm'),
+                        meta: {
+                            title: '京东销售数据',
+                            icon: 'JD'
+                        }
+                    },
 
                     // {
                     //     path: 'dataMap',
