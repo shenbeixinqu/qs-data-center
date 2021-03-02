@@ -1,39 +1,42 @@
 <!--  -->
-
-
-
 <template>
-  <div></div>
+  <div class="jdData">
+      <top-header></top-header>
+      <scroll-board></scroll-board>
+  </div>
 </template>
 
 <script>
-// TODO： 展示京东数据销售图
-// import { getAnnualsalesDetails } from '@/api/jingdong'
-import { getAnnualsales } from '@/api/jingdong'
+import topHeader from './components/topHeader'
+import scrollBoard from './components/scrollBoard'
+
 export default {
+  name: 'jdData',
   data () {
     return {
     };
   },
-    created(){
-        this.getData()
-    },
-  components: {},
+
+  components: {
+      topHeader,
+      scrollBoard
+  },
 
   computed: {},
 
   mounted: {},
 
-  methods: {
-      getData(){
-          getAnnualsales().then(res =>{
-              console.log(res);
-          })
-      },
-      
-  }
+  methods: {}
 }
 
 </script>
-<style  scoped>
+<style scoped>
+
+.jdData{
+    width: 100%;
+    height: 95vh;
+    color: #fff;
+    padding-top: 20px;
+    background-image: url('./img/bg.png');
+}
 </style>

@@ -27,6 +27,8 @@
           <size-select id="size-select" class="right-menu-item hover-effect" />
         </el-tooltip> -->
 
+        <lang-select class="right-menu-item hover-effect" />
+
       </template>
 
 
@@ -69,6 +71,7 @@ import Search from '@/components/HeaderSearch'
 import ErrorLog from '@/components/ErrorLog'
 import Guide from '@/components/Guide/index'
 import SizeSelect from '@/components/SizeSelect'
+import LangSelect from '@/components/LangSelect'
 
 export default {
   components: {
@@ -76,7 +79,8 @@ export default {
     Hamburger,
     Screenfull,
     Search,
-    Guide
+    Guide,
+    LangSelect
   },
   computed: {
     ...mapGetters([

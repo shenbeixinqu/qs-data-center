@@ -21,6 +21,10 @@ import VCharts from 'v-charts'
 
 import '@/assets/iconfonts/iconfont.css'
 
+import dataV from '@jiaminghi/data-view'
+
+Vue.use(dataV)
+
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
