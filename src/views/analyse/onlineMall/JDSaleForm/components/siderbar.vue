@@ -6,6 +6,7 @@
       :max="2022"
       :min="2013" 
       :marks="marks"
+      @change = 'handle'
       >
     </el-slider>
   </div>
@@ -26,6 +27,11 @@
             2020: '2020 年',
             2021: '2021 年',
         }
+      }
+    },
+    methods:{
+      handle(e){
+        this.$emit('transmitYear', e)
       }
     }
   }

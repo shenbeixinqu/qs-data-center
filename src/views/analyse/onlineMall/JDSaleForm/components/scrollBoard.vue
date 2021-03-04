@@ -4,7 +4,7 @@
       <div id="content">
         <dv-scroll-board :config="config" @click="showDetails" />
         <br />
-        <sider-bar></sider-bar>
+        <sider-bar @transmitYear = 'handleResive' ></sider-bar>
       </div>
     </dv-border-box-1>
   </div>
@@ -31,6 +31,7 @@ export default {
         waitTime: 2000,
         indexHeader: "序号",
       },
+      year: 2019
     };
   },
   components: {
@@ -40,31 +41,29 @@ export default {
     this.getData();
   },
   methods: {
-    getData() {
 
-      getAnnualsales().then(res => {
+    getData(){
+      // const { config } = this
+      getAnnualsales(this.year).then(res => {
 
         // // console.log(res)
-
-
         var acceptArr = res.data;
         var finalArr = [];
         for (var i = 0; i < acceptArr.length; i++) {
           var tempArr = [];
           tempArr.push(acceptArr[i].brand);
-          tempArr.push(acceptArr[i].annualsales.toString());
-          tempArr.push(acceptArr[i].praiserate.toString());
-          tempArr.push(acceptArr[i].annualturnover.toString());
+          tempArr.push(acceptArr[i].annualsales.toString() + " 张");
+          tempArr.push(acceptArr[i].praiserate.toString() + " %");
+          tempArr.push('￥ ' + acceptArr[i].annualturnover.toLocaleString()); 
           finalArr.push(tempArr);
         }
 
         this.config.data = finalArr
 
-        // console.log(this.config.data)
-        // console.log(this.config.header)
-
-
         console.log(this.config.data)
+
+        // 
+        this.config = { ...this.config }
 
       });
     },
@@ -73,6 +72,12 @@ export default {
     showDetails(e) {
       console.log(e.ceil);
     },
+
+    handleResive(value){
+      this.year = value
+      // console.log(this.year)
+      this.getData()
+    }
   },
 };
 </script>
