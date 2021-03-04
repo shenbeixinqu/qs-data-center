@@ -26,7 +26,7 @@
 
 ## 部分截图
 
-![p1](https://raw.githubusercontent.com/will-wang-china/qs-data-center/dev/img/%E4%BA%AC%E4%B8%9C%E6%95%B0%E6%8D%AE%E6%A6%82%E8%A7%88.png)
+![p1](img/京东数据概览.png)
 ![p1](https://raw.githubusercontent.com/will-wang-china/qs-data-center/dev/img/%E5%85%A8%E7%90%83%E9%94%80%E5%94%AE%E9%87%8F.png)
 ![p1](https://raw.githubusercontent.com/will-wang-china/qs-data-center/dev/img/%E5%BE%AE%E5%8D%9A%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8.png)
 ![p1](https://raw.githubusercontent.com/will-wang-china/qs-data-center/dev/img/%E5%BE%AE%E5%8D%9A%E6%95%B0%E6%8D%AE%E6%A6%82%E8%A7%88.png)
