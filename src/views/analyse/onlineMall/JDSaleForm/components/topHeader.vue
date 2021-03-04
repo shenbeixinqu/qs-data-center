@@ -9,8 +9,11 @@
 
 <script>
 export default {
-  name: 'TopHeader'
-}
+  name: "TopHeader",
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style lang="less">
@@ -28,7 +31,8 @@ export default {
     margin-top: 30px;
   }
 
-  .header-left-decoration, .header-right-decoration {
+  .header-left-decoration,
+  .header-right-decoration {
     width: 25%;
     height: 60px;
   }

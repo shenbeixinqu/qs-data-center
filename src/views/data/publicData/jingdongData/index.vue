@@ -152,9 +152,7 @@ export default {
 
   computed: {},
 
-  mounted: {
-      
-  },
+
   methods: {
       getList() {
         fetchList(this.listQuery).then(response => {

@@ -20,7 +20,7 @@ export function deleteData(id) {
 // 品牌销量数
 export function getAnnualsales(params) {
     return request({
-        url: '/jingdong/getAnnualsales',
+        url: '/jingdong/getSaleDetails',
         method: 'get',
         params
     })

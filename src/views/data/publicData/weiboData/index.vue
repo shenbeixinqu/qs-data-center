@@ -265,7 +265,7 @@ import Pagination from "@/components/Pagination";
 import { fetchList } from "@/api/weibo";
 import { deleteData } from "@/api/weibo";
 import { exportData } from './downloadData/download'
-import axios from "axios";
+
 
 export default {
   components: {
