@@ -1,6 +1,6 @@
-# 数据中台项目
+# 数据中台（内部版本V1.0）
 ## 项目描述：
-基于vue技术栈实现的项目，使用element组件进行开发，采用前后端分离的开发模式。
+基于Vue、Vuex、Vue Router、axios、element-ui、DataV、v-charts、Js-cookie进行开发，采用前后端分离的开发模式。
 
 ## 主要功能：
 
@@ -9,15 +9,17 @@
 ## 技术要点：
 1.使用vue-element-template构建项目的基本结构，Element-UI组件库中的部分功能进行快速开发,采用vue-router 配置 路由来处理各组件之间的通讯, axios请求服务器数据和权限校验;
 
-2.采用cookie + Token 的方式验证用户登录; 
+2.采用cookie保存Token的方式验证用户登录; 
 
-3.通过proxyTable+ Nginx服务器代理,解决跨域问题;
+3.对Axios等组件进行封装;
 
-4.对Axios, Cookie 等组件进行封装;
+4.采用mockjs在开发阶段模拟数据,实现前后端分离开发;
 
-5.采用mockjs在开发阶段模拟数据,实现前后端分离开发;
+6.采用Vuex进行状态管理
 
-6.使用路由懒加载等方式对项目进行优化;
+7.采用Vue Router管理路由
+
+8.采用v-charts、 DataV组件绘图表，展示后端数据
 
 9.使用Webpack进行项目打包,实现代码优化功能;使用git 代码管理工具。
 
@@ -35,11 +37,13 @@
 
 
 ## 技术支持
-
-[阿里巴巴矢量图标库](https://www.iconfont.cn/)
-[vue-element-template](https://github.com/PanJiaChen/vue-admin-template)
-[v-charts](https://v-charts.js.org/#/)
-[DataV](http://datav.jiaminghi.com/)
-[]()
+[Vue](https://vuejs.org/)      
+[element-ui](https://element.eleme.io/)           
+[Vue router](https://router.vuejs.org/)          
+[Js-cookie](https://github.com/js-cookie/js-cookie)            
+[阿里巴巴矢量图标库](https://www.iconfont.cn/)                  
+[vue-element-template](https://github.com/PanJiaChen/vue-admin-template)              
+[v-charts](https://v-charts.js.org/#/)             
+[DataV](http://datav.jiaminghi.com/)              
 
 
